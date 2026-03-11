@@ -1,0 +1,5 @@
+/node_modules
+index.test.js
+run_tests.sh
+setup.sh
+.bad_commit
