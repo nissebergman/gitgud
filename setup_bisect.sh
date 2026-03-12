@@ -148,7 +148,7 @@ echo "$BAD_HASH" > /tmp/bisect_bad_commit
 
 COMMIT_COUNT=$(git log --oneline | wc -l | tr -d ' ')
 echo ""
-echo "✅ Setup complete! $COMMIT_COUNT commits created."
-echo "   A bug was introduced somewhere in the history."
-echo "   Run 'node index.js' — it's broken! Use git bisect to find the culprit."
+echo "✅ Setup klar! $COMMIT_COUNT commits skapade."
+echo "   En bugg har smugit sig in någonstans i historiken."
+echo "   Kör 'node index.js' — den är trasig! Använd git bisect för att hitta den skyldige."
 echo ""

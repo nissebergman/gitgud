@@ -43,21 +43,6 @@ Alla 3 commits på `main`. Branchen `branch` ska vara borttagen.
 5. Mergea `branch` in i `main`.
 6. Ta bort branchen `branch`.
 
-## Kommandon att använda
-
-```bash
-git checkout -b branch
-echo "en sockerbagare han bor i staden" > branch.md
-git add branch.md
-git commit -m "add branch.md with lyrics"
-echo "är lustiga att se" >> main.md
-git add main.md
-git commit -m "update main.md with more lyrics"
-git checkout main
-git merge branch
-git branch -d branch
-```
-
 ## Kör tester
 
 ```bash

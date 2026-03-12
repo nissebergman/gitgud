@@ -8,7 +8,7 @@ Slutresultatet ska vara en fungerande `server.js` som kombinerar alla features.
 ## Starta
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 ## Startläge
@@ -50,20 +50,8 @@ Filer som ska finnas: `auth.js`, `api.js`, `database.js`
 
 Inga merge-konfliktmarkörer (`<<<<<<<`, `=======`, `>>>>>>>`) i någon fil.
 
-## Kommandon att använda
-
-```bash
-git merge feature/auth
-git merge feature/api              # → konflikter i server.js och config.json
-# redigera filerna, lös konflikterna
-git add .
-git commit                         # slutför merge
-git merge feature/database         # → fler konflikter
-# redigera, lös, stagea, committa
-```
-
 ## Kör tester
 
 ```bash
-bash run_tests.sh
+./run_tests.sh
 ```

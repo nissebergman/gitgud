@@ -112,6 +112,6 @@ git commit -m "update changelog for v0.2.0"
 
 COMMIT_COUNT=$(git log --oneline | wc -l | tr -d ' ')
 echo ""
-echo "✅ Setup complete! $COMMIT_COUNT commits created."
-echo "   A secret is buried in the git history. Can you find and purge it?"
+echo "✅ Setup klar! $COMMIT_COUNT commits skapade."
+echo "   En github tokensecret är gömd i git-historiken. Hitta och rensa!"
 echo ""

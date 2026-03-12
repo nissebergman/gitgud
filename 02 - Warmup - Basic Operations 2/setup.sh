@@ -23,9 +23,9 @@ git commit -m "initial project setup"
 
 COMMIT_COUNT=$(git log --oneline | wc -l | tr -d ' ')
 echo ""
-echo "✅ Setup complete! $COMMIT_COUNT commit created on main."
+echo "✅ Setup klar! $COMMIT_COUNT commit på main."
 echo ""
-echo "   Your task:"
-echo "   • Create branch 'first-branch' with a commit starting with 'A:'"
-echo "   • Create branch 'second-branch' with a commit starting with 'B:'"
+echo "   Din uppgift:"
+echo "   • Skapa branch 'first-branch' med en commit som börjar med 'A:'"
+echo "   • Skapa branch 'second-branch' med en commit som börjar med 'B:'"
 echo ""

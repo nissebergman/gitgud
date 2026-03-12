@@ -3,12 +3,15 @@
 ## Uppgift
 
 Programmet `index.js` är trasigt. Någonstans bland ~50 commits introducerades en bugg.
-Använd `git bisect` för att hitta exakt vilken commit som orsakade felet, revertera den och spara svaret.
+
+- Använd `git bisect` för att hitta exakt vilken commit som orsakade felet.
+- Spara hela hashen på den commit som introducerar buggen i en fil vid namn `answer.txt`
+- Revertera commiten från main.
 
 ## Starta
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 ## Startläge
@@ -37,30 +40,8 @@ main
 - `node index.js` ska köras utan fel (exit code 0)
 - Bisect ska vara avslutat (inte pågående)
 
-## Kommandon att använda
-
-```bash
-node index.js                              # bekräfta att det är trasigt
-
-git bisect start
-git bisect bad                             # nuvarande commit är trasig
-git log --oneline | tail -1                # hitta första committen
-git bisect good <första-commit-hash>
-
-# för varje steg:
-node index.js                              # funkar? → git bisect good
-                                           # kraschar? → git bisect bad
-
-# när bisect hittar den trasiga committen:
-echo "<hash>" > answer.txt
-git bisect reset
-git revert <hash>
-git add answer.txt
-git commit -m "add bisect answer"
-```
-
 ## Kör tester
 
 ```bash
-bash run_tests.sh
+./run_tests.sh
 ```

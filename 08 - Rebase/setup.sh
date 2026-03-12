@@ -15,7 +15,7 @@ fi
 git init -b main
 
 # Initial commit with project files
-git add .gitignore README.md content.md package.json package-lock.json
+git add .gitignore README.md content.md package.json package-lock.json setup.sh
 git commit -m "initial project setup"
 
 # --- chore commits ---
@@ -63,12 +63,12 @@ git commit -m "ci: add Slack notification on failure"
 
 COMMIT_COUNT=$(git log --oneline | wc -l | tr -d ' ')
 echo ""
-echo "✅ Setup complete! $COMMIT_COUNT commits created (1 initial + 8 task commits)."
+echo "✅ Setup klar! $COMMIT_COUNT commits skapade (1 initial + 8 uppgiftscommits)."
 echo ""
-echo "   You have 8 commits to squash using interactive rebase:"
-echo "   • 3 chore: commits  →  squash into 1"
-echo "   • 3 fix: commits    →  squash into 1"
-echo "   • 2 ci: commits     →  squash into 1"
+echo "   Du har 8 commits att squasha med interaktiv rebase:"
+echo "   • 3 chore:-commits  →  squasha till 1"
+echo "   • 3 fix:-commits    →  squasha till 1"
+echo "   • 2 ci:-commits     →  squasha till 1"
 echo ""
-echo "   Use 'git rebase -i HEAD~8' to start!"
+echo "   Kör 'git rebase -i HEAD~8' för att börja!"
 echo ""

@@ -1,4 +1,4 @@
-# 08 — Interaktiv Rebase: Squash commits 🫸🫷
+# 08 — Interaktiv Rebase: Squash commits
 
 ## Uppgift
 
@@ -7,7 +7,7 @@ Använd `git rebase -i` för att squasha 8 commits till 3 (en per prefix: `chore
 ## Starta
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 ## Startläge
@@ -41,20 +41,10 @@ main
 
 - 4 commits totalt (1 initial + 3 squashade)
 - Alla 8 filer ska fortfarande finnas kvar
-- Commit-meddelanden ska börja med `chore:`, `fix:` respektive `ci:`
-
-## Kommandon att använda
-
-```bash
-git log --oneline                  # se alla commits
-git rebase -i HEAD~8               # starta interaktiv rebase
-```
-
-I editorn: ändra `pick` till `squash` (eller `s`) för de commits du vill slå ihop.
-Behåll `pick` på den första i varje grupp.
+- Commit-meddelanden för respektive ska börja med `chore:`, `fix:` respektive `ci:`
 
 ## Kör tester
 
 ```bash
-bash run_tests.sh
+./run_tests.sh
 ```

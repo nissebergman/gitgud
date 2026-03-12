@@ -23,7 +23,7 @@ git commit -m "initial project setup"
 
 COMMIT_COUNT=$(git log --oneline | wc -l | tr -d ' ')
 echo ""
-echo "✅ Setup complete! $COMMIT_COUNT commit created on main."
+echo "✅ Setup klar! $COMMIT_COUNT commit på main."
 echo ""
-echo "   Your task: modify content.md, stage, and commit."
+echo "   Din uppgift: skapa content.md, stagea och committa."
 echo ""

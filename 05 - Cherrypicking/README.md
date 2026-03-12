@@ -32,18 +32,6 @@ main                         feature
 - `main` ska ha cherry-pickad **enbart** `B:`-committen
 - `B.md` ska finnas på `main`, men **inte** `A.md` eller `C.md`
 
-## Kommandon att använda
-
-```bash
-git checkout -b feature
-# skapa A.md, committa med "A: ..."
-# skapa B.md, committa med "B: ..."
-# skapa C.md, committa med "C: ..."
-git checkout main
-git log feature --oneline       # hitta B:-committens hash
-git cherry-pick <hash>
-```
-
 ## Kör tester
 
 ```bash
