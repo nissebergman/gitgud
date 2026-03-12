@@ -2,7 +2,7 @@
 
 ## Uppgift
 
-Använd BARA `git cat-file` för att utforska interna delar av git — commits, trees och blobs.
+Använd BARA `git log` för att hitta hashet och `git cat-file` för att utforska interna delar av git — commits, trees och blobs.
 Spara resultaten i filer.
 
 ## Starta
