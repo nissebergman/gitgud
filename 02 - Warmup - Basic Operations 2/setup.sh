@@ -12,6 +12,9 @@ if git log --oneline >/dev/null 2>&1; then
     rm -rf .git
 fi
 
+# Remove files from previous runs (student-created files on branches)
+find . -maxdepth 1 -type f -name '*.md' ! -name 'README.md' ! -name 'content.md' -delete 2>/dev/null || true
+
 git init -b main
 
 # Initial commit with project files

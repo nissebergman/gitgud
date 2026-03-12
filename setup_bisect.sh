@@ -12,6 +12,9 @@ if git log --oneline >/dev/null 2>&1; then
     echo ""
 fi
 
+# Remove files from previous runs
+rm -f answer.txt
+
 # --- The working version of index.js ---
 WORKING_INDEX='// Calculator module used by the team
 // This program must exit cleanly (exit code 0) when working correctly.

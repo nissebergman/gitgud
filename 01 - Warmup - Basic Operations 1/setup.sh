@@ -12,6 +12,9 @@ if git log --oneline >/dev/null 2>&1; then
     rm -rf .git
 fi
 
+# Remove files from previous runs
+rm -f content.md
+
 git init -b main
 
 # Initial commit with project files
