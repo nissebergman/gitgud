@@ -84,7 +84,7 @@ cat > config.json << 'CONFIGJSON'
 }
 CONFIGJSON
 
-git add .gitignore README.md content.md package.json package-lock.json server.js config.json
+git add .gitignore README.md content.md package.json package-lock.json server.js config.json index.test.js run_tests.sh setup.sh
 git commit -m "initial project setup"
 
 # ─────────────────────────────────────────────

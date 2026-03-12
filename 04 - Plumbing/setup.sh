@@ -21,7 +21,7 @@ echo "sparre" > content.md
 git init -b main
 
 # Initial commit with project files (content.md has "sparre")
-git add .gitignore README.md content.md package.json
+git add .gitignore README.md content.md package.json index.test.js run_tests.sh setup.sh
 git commit -m "initial project setup"
 
 COMMIT_COUNT=$(git log --oneline | wc -l | tr -d ' ')

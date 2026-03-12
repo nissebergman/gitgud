@@ -113,7 +113,7 @@ BUG_COMMIT=22
 
 # Commit 0: initial setup with working index.js
 echo "$WORKING_INDEX" > index.js
-git add .gitignore index.js README.md content.md package.json package-lock.json
+git add .gitignore index.js README.md content.md package.json package-lock.json setup.sh index.test.js run_tests.sh
 git commit -m "initial project setup"
 
 # Create 49 more commits (total = 50)

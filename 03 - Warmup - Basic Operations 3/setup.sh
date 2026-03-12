@@ -19,7 +19,7 @@ git init -b main
 
 # Commit 1: main.md with first line
 echo "små grodorna små grodorna" > main.md
-git add main.md
+git add main.md .gitignore README.md content.md package.json package-lock.json setup.sh index.test.js run_tests.sh
 git commit -m "add main.md with lyrics"
 
 echo ""

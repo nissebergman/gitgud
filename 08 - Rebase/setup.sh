@@ -15,7 +15,7 @@ fi
 git init -b main
 
 # Initial commit with project files
-git add .gitignore README.md content.md package.json package-lock.json setup.sh
+git add .gitignore README.md content.md package.json package-lock.json setup.sh index.test.js run_tests.sh
 git commit -m "initial project setup"
 
 # --- chore commits ---

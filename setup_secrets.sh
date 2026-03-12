@@ -13,7 +13,7 @@ if git log --oneline >/dev/null 2>&1; then
 fi
 
 # Commit 1: initial setup
-git add .gitignore content.md README.md package.json package-lock.json
+git add .gitignore content.md README.md package.json package-lock.json index.test.js run_tests.sh setup.sh
 git commit -m "initial project setup"
 
 # Commit 2: add team members
