@@ -7,7 +7,7 @@ Initiera ett git-repo, ändra en fil, stagea och committa.
 ## Starta
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 ## Startläge
@@ -18,7 +18,7 @@ main
  ● initial project setup
 ```
 
-En branch (`main`) med en commit. Filen `content.md` finns men är oförändrad.
+En branch (`main`) med en grund-commit.
 
 ## Mål
 
@@ -26,9 +26,11 @@ En branch (`main`) med en commit. Filen `content.md` finns men är oförändrad.
 main
  │
  ● initial project setup
+ │
+ ● A: add content.md
 ```
 
-Allt kvar på `main` — fortfarande bara en branch, inga nya branches.
+Allt kvar på `main` — men med ny fil (content.md) och commit som börjar på A:
 
 ## Kommandon att använda
 
@@ -40,5 +42,5 @@ git commit -m "meddelande"
 ## Kör tester
 
 ```bash
-bash run_tests.sh
+./run_tests.sh
 ```

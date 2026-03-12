@@ -7,7 +7,7 @@ Skapa två nya branches från `main`, gör ändringar i varje och committa.
 ## Starta
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 ## Startläge
@@ -37,7 +37,7 @@ Commit-meddelandet på `first-branch` ska börja med `A:` och på `second-branch
 
 ```bash
 git branch <namn>
-git checkout <namn>     # eller: git switch <namn>
+git checkout <namn>
 git add <fil>
 git commit -m "A: ..."
 ```
@@ -45,5 +45,5 @@ git commit -m "A: ..."
 ## Kör tester
 
 ```bash
-bash run_tests.sh
+./run_tests.sh
 ```

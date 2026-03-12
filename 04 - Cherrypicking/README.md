@@ -7,7 +7,7 @@ Skapa en feature-branch med tre commits och cherry-picka **bara en** av dem till
 ## Starta
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 ## Startläge
@@ -47,5 +47,5 @@ git cherry-pick <hash>
 ## Kör tester
 
 ```bash
-bash run_tests.sh
+./run_tests.sh
 ```

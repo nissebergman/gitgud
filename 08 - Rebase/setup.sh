@@ -3,6 +3,9 @@ set -e
 
 cd "$(dirname "$0")"
 
+# Install dependencies
+npm install --silent 2>/dev/null || true
+
 # Check if there are already commits — if so, wipe and reinitialize
 if git log --oneline >/dev/null 2>&1; then
     echo "⚠️  Existing commits detected. Purging git history to start fresh..."

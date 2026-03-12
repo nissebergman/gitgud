@@ -2,13 +2,13 @@
 
 ## Uppgift
 
-Använd `git cat-file` för att utforska gits interna objekt — commits, trees och blobs.
+Använd BARA `git cat-file` för att utforska interna delar av git — commits, trees och blobs.
 Spara resultaten i filer.
 
 ## Starta
 
 ```bash
-bash setup.sh
+./setup.sh
 ```
 
 ## Startläge
@@ -16,7 +16,7 @@ bash setup.sh
 ```
 main
  │
- ● initial project setup    ← content.md innehåller "sparre"
+ ● initial project setup content.md innehåller gömd sträng
 ```
 
 ## Mål
@@ -24,10 +24,10 @@ main
 Skapa filerna:
 
 - **catfileout.txt** — innehållet från `git cat-file -p <commit-hash>` (ska innehålla `tree`, `author`, `committer`)
-- **blob.txt** — innehållet från `git cat-file -p <blob-hash>` (ska innehålla `sparre`)
+- **blob.txt** — innehållet från `git cat-file -p <blob-hash>` (ska innehålla texten från content.md)
 
-## Kommandon att använda
-
+<details>
+<summary>Tips och spoilers</summary>
 ```bash
 git log                           # hitta commit-hash
 git cat-file -p <commit-hash>     # visa commit → hitta tree-hash
@@ -42,6 +42,7 @@ git cat-file -p <commit-hash> > catfileout.txt
 git cat-file -p <blob-hash> > blob.txt
 ```
 
+</summary>
 ## Kör tester
 
 ```bash
