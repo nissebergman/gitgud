@@ -1,143 +1,46 @@
-# Porcelain vs plumbing.
+# GitGud
 
-In Git, commands are divided into high-level ("porcelain") commands and low-level ("plumbing") commands. The porcelain commands are the ones that you will use most often as a developer to interact with your code. Some porcelain commands are:
+En workshop för dig som vill förstå Git på djupet – bortom `add`, `commit`, `push` och `pull`.
 
-git status
-git add
-git commit
-git push
-git pull
-git log
+Övningarna är hands-on och fokuserar på situationer som är lätta att hamna i, men svårare att ta sig ur, muhaha.
 
-git apply
-git commit-tree
-git hash-object
+## Workshopens områden
 
-git cat-file -p to find:
+* 🧱 Git-grunder och intern struktur
+* 🔧 Branching och Git plumbing
+* 🍒 Cherry-picking
+* 🔐 Secrets och historik
+* 🔍 Bisect
+* 🔀 Rebase och omskrivning av historik
+* 💥 Komplexa merge-situationer
+* 🛟 Återställning med `reflog` och `reset`
+* 📦 Patch-flöden med `format-patch`, `apply` och `am`
+* 🧳 Stash och worktrees
 
-- Commit (first numbers of hash)
-- Tree (within commit)
-- Blob (within tree)
-- Contents (within blob)
+## Övningar
 
-# A file can be in one of several states in a Git repository. Here are a few important ones:
+Varje numrerad mapp innehåller en fristående övning:
 
-untracked: Not being tracked by Git
-staged: Marked for inclusion in the next commit
-committed: Saved to the repository's history
-The git status command shows you the current state of your repo. It will tell you which files are untracked, staged, and committed.
+1. **Warmup – Basic Operations**
+2. **Warmup – Basic Operations 2**
+3. **Warmup – Basic Operations 3**
+4. **Plumbing**
+5. **Cherry-picking**
+6. **Secrets**
+7. **Bisect**
+8. **Rebase**
+9. **Merge Chaos**
 
-# Git log
+Målet är inte *bara* att lära sig Git-kommandon, utan att förstå vad som faktiskt händer – och våga experimentera, felsöka och återhämta sig när något går fel.
 
-git --no-pager log -n 1
+## Kom igång
 
-# Everything in terminal
+```bash
+git clone https://github.com/nissebergman/gitgud.git
+cd gitgud
+```
 
-# 01
+Börja med övning `01`. Varje övningsmapp har en egen README.md med instruktioner. 
+Vissa övningar innehåller setup- och verifieringsskript för Windows, macOS och Linux.
 
-## verify.bat
-
-# base
-
-## setup (windows/linux/mac)
-
-## verify all
-
-git commit --fixup + git rebase --autosquash
-git rebase --onto
-
-Recovering From Mistakes
-
-Advanced Git users should be able to undo almost anything.
-
-Topics:
-
-git reflog
-
-Recovering lost commits
-
-Detached HEAD recovery
-
-Difference between:
-
-git reset --soft
-
-git reset --mixed
-
-git reset --hard
-
-git restore vs git checkout
-
-Critical skill:
-
-“Nothing is lost in Git until garbage collection.”
-
-`git rerere`
-
-git format-patch
-
-git apply
-
-git am
-
-Advanced:
-
-git log -S (pickaxe search for code changes)
-
-Example:
-
-git log -S "myFunction"
-
-6. Stashing (Advanced Use)
-
-People often only know the basics.
-
-Include:
-
-git stash -p
-
-git stash --include-untracked
-
-Named stashes
-
-Applying vs popping
-
-Stashing specific paths
-
-7. Worktrees (Very Advanced & Very Useful)
-
-Often missing from workshops but powerful.
-
-git worktree allows multiple working directories from one repo.
-
-Example:
-
-git worktree add ../feature-x feature-x
-
-Use cases:
-
-Working on multiple branches simultaneously
-
-Avoid constant checkout
-
-If I Were Designing an "Advanced Git Workshop"
-
-I'd include these core advanced pillars:
-
-Rewriting history (rebase -i)
-
-Debugging history (bisect, blame, pickaxe)
-
-Recovery (reflog, resets)
-
-Complex merges
-
-Patch workflows
-
-Worktrees
-
-Hooks
-
-Secret removal from history (git filter-repo)
-
-Add task with git merge. One basic, one hell!
+Kör igång, [break stuff!](https://open.spotify.com/track/5cZqsjVs6MevCnAkasbEOX)
